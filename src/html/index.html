@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>手风琴</title>
+		<link rel="stylesheet" href="../css/accordion.css">
+	</head>
+	<body>
+		<div id="accordion">
+			<ul>
+				<li class="first" style="background:url(../images/accordion/1.jpg) no-repeat center center;">
+					<a></a>
+				</li>
+				<li
+					style="background:url(../images/accordion/2.jpg) no-repeat center center;"
+				></li>
+				<li class="expand"
+					style="background:url(../images/accordion/3.jpg) no-repeat center center;"
+					>
+					<span class="new"><label >new!</label></span>
+					<span class="gan"></span>
+					<a >
+						<div class="banner">
+							<div class="left">
+								<div class="up">Dragon Atlas</div>
+								<div class="down">lorem ispum dolor sit amet</div>
+							</div>
+							<div class="right">
+								<div class="text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+									ut labore et dolore magna aliqua. Ut enim ad minim......ue laudantium, 
+								</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li
+					style="background:url(../images/accordion/4.jpg) no-repeat center center;"
+				></li>
+				
+			</ul>
+		</div>
+		<script src="../js/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../js/jquery.accordion.js"></script>
+		<script>
+		$(function(){
+			$("#accordion").accordion();
+			$("#accordion a").hover(function() {
+				$("#accordion .banner").animate({height:'59px'},200);
+			}, function() {
+				$("#accordion .banner").animate({height:0},200);
+			});
+		});
+		</script>
+	</body>
+</html>

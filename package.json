@@ -1,0 +1,29 @@
+{
+  "name": "accordion",
+  "version": "1.0.0",
+  "description": "accordion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengweiqi/accordion.git"
+  },
+  "keywords": [
+    "accordion"
+  ],
+  "author": "fengweiqi <yakia@gm99.com> (http://www.fengweiqi.cn/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengweiqi/accordion/issues"
+  },
+  "homepage": "https://github.com/fengweiqi/accordion",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1"
+  }
+}
